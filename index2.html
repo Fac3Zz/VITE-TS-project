@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <title>XStack project</title>
+</head>
+<style>
+    body {
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+    }
+    .page-container {
+        max-width: 1280px;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(2,50%);
+        gap: 2rem;
+    }
+    .page-container__item {
+        display: flex;
+        border: 1px solid #c9c9c9;
+        border-radius: 0.8rem;
+        padding: 0.8rem;
+        gap: 1rem;
+        box-shadow: 0.8rem 0.8rem #c9c9c9;
+    }
+    .photo {
+        border: 1px solid #c9c9c9;
+        border-radius: 0.8rem;
+    }
+    .photo__image {
+        max-width: 100px;
+    }
+    .footer {
+        display: flex;
+        background-color: magenta;
+        color: black;
+        position: fixed;
+        bottom: 0%;
+        width: 100%;
+        min-height: 10vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .personal__info {
+        margin: 0.2rem 0;
+    }
+    .personal__info span {
+        font-weight: 400;
+    }
+    .header {
+        margin-bottom: 0.8rem;
+        text-align: center;
+    }
+    .header__search {
+        border-radius: 0.8rem;
+        border-color: #c9c9c9;
+    }
+</style>
+<body>
+    <header class="header">
+        <h3>XStack Project</h3>
+        <form class="header__form" action="" onsubmit="">
+            <input class="header__search" type="text" id="header__search">
+        </form>
+        <select name="" id="order__select">
+            <option value="alphabetical">Alphabetical</option>
+            <option value="date__ascending">Ascending by Date of Birth</option>
+            <option value="date__descending">Descending by Date of Birth</option>
+        </select>
+    </header>
+    <main class="page-container">
+        
+    </main>
+    <footer class="footer">
+        Welcome to XStack
+    </footer>
+    <script src="index2.ts"></script>
+</body>
+</html>
