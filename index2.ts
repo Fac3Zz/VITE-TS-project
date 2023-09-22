@@ -98,7 +98,7 @@ const randomDataApi: RandomDataApi = {
 
     let ordering = document.querySelector('#order__select');
     (ordering as HTMLInputElement).addEventListener('click', (e) => {
-        let orderedUsers = [];
+        let orderedUsers: Array<UserData> = [];
         if ((ordering as HTMLInputElement).value === "alphabetical") {
             orderedUsers = [...userList].sort((a, b) => `${a.first_name} ${a.last_name}` <= `${b.first_name} ${b.last_name}` ? -1 : 1)
         } else if ((ordering as HTMLInputElement).value === "date__ascending") {
